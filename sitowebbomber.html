@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Il mio sito gratuito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="site-title">Il mio sito gratuito</h1>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">Chi sono</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2>Benvenuto!</h2>
+        <p>Questo è un sito statico ospitato gratuitamente con GitHub Pages.</p>
+        <button id="cta">Mostrami di più</button>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>Chi sono</h3>
+      <p>Breve descrizione: sostituisci questo paragrafo con il tuo testo.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contatti</h3>
+      <form id="contact-form">
+        <label>
+          Nome
+          <input type="text" name="name" placeholder="Il tuo nome" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="tuo@email.com" required>
+        </label>
+        <label>
+          Messaggio
+          <textarea name="message" placeholder="Scrivimi..." required></textarea>
+        </label>
+        <button type="submit">Invia</button>
+      </form>
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Il mio sito gratuito</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
